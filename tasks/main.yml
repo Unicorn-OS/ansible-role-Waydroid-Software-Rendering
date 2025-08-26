@@ -1,0 +1,11 @@
+---
+# https://wiki.archlinux.org/title/Waydroid#Software_rendering
+- name:
+  ansible.builtin.blockinfile:
+    path: /var/lib/waydroid/waydroid.cfg
+    marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
+    insertafter: "[properties]"
+    block: |
+      ro.hardware.gralloc=default
+      ro.hardware.egl=swiftshader
+  become: true
