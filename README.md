@@ -1,7 +1,9 @@
-Role Name
+Waydroid Software Rendering
 =========
 
-A brief description of the role goes here.
+Use in a VM, or when you have an incompatible GPU.
+
+https://wiki.archlinux.org/title/Waydroid#Software_rendering
 
 Requirements
 ------------
