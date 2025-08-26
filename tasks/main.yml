@@ -12,3 +12,6 @@
   notify:
   - Waydroid upgrade offline
   - Restart waydroid container
+
+- name: Run handlers
+  ansible.builtin.meta: flush_handlers
