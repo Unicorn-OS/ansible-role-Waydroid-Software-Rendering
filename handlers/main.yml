@@ -1,3 +1,10 @@
-#SPDX-License-Identifier: MIT-0
 ---
-# handlers file for try
+- name: Waydroid upgrade offline
+  ansible.builtin.shell: waydroid upgrade --offline
+  become: true
+  
+- name: Restart waydroid container # waydroid-container.service
+  ansible.builtin.systemd_service:
+    state: restarted
+    name: waydroid-container
+  become: true
